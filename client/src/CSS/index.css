@@ -1,0 +1,512 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Times New Roman", Times, serif;
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+header {
+  position: sticky;
+  top: 0%;
+  left: 0%;
+  background: white;
+  z-index: 10000000000;
+}
+
+.nav_bar {
+  background-color: transparent;
+  height: 6.6rem;
+}
+.nav_bar .container > a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+.nav_bar .offcanvas-header h5 {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+.nav_bar .offcanvas-header button {
+  font-size: 1.8rem;
+}
+.nav_bar .navbar-nav {
+  gap: 2rem;
+}
+.nav_bar .navbar-nav .nav-item a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: black;
+}
+.nav_bar .navbar-nav .nav-item .active {
+  display: inline-block;
+  padding-left: 0%;
+  padding-right: 0%;
+  padding-bottom: 1px;
+  border-bottom: 0.2rem solid;
+  color: #0000ff;
+  font-weight: 600;
+}
+
+.toastBody {
+  font-family: "Atlas Grotesk Web", Arial, Helvetica, sans-serif;
+  font-size: 1.7rem !important;
+}
+
+.register_section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 8rem;
+}
+.register_section .reg_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register_section .reg_image img {
+  width: 40rem;
+  height: 50rem;
+}
+.register_section .reg_content {
+  padding: 0 5rem;
+}
+.register_section .reg_content h3 {
+  font-size: 4rem;
+  font-weight: 700;
+  -webkit-text-decoration: underline blue;
+          text-decoration: underline blue;
+}
+.register_section .reg_content form {
+  padding-top: 4rem;
+}
+.register_section .reg_content form .input_group label {
+  font-size: 2rem;
+}
+.register_section .reg_content form .input_group input {
+  font-size: 1.8rem;
+}
+.register_section .reg_content form .input_group p {
+  font-size: 1.5rem;
+  color: red;
+  text-transform: capitalize;
+}
+.register_section .reg_content form button {
+  font-size: 1.8rem;
+}
+
+.login_section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 8rem;
+}
+.login_section .login_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login_section .login_img img {
+  width: 40rem;
+  height: 40rem;
+}
+.login_section .login_content {
+  padding: 0 5rem;
+}
+.login_section .login_content h3 {
+  font-size: 4rem;
+  font-weight: 700;
+  -webkit-text-decoration: underline blue;
+          text-decoration: underline blue;
+}
+.login_section .login_content form {
+  padding-top: 4rem;
+}
+.login_section .login_content form .input_group label {
+  font-size: 2rem;
+}
+.login_section .login_content form .input_group input {
+  font-size: 1.8rem;
+}
+.login_section .login_content form button {
+  font-size: 1.8rem;
+}
+
+.home_section {
+  padding-top: 4rem;
+}
+.home_section .welcome_home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home_section .welcome_home .welcome_content {
+  display: flex;
+  flex-direction: column;
+}
+.home_section .welcome_home .welcome_content p:first-child {
+  font-size: 1.7rem;
+  color: rgb(22, 22, 140);
+}
+.home_section .welcome_home .welcome_content h1 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+.home_section .welcome_home .welcome_content .para {
+  font-size: 1.9rem;
+  text-align: justify;
+}
+.home_section .welcome_home .welcome_content .button {
+  margin-top: 3rem;
+}
+.home_section .welcome_home .welcome_content .button .btn1 {
+  margin-right: 3rem;
+  font-size: 1.8rem;
+}
+.home_section .welcome_home .welcome_content .button .btn2 {
+  font-size: 1.8rem;
+}
+.home_section .welcome_home .welcome_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home_section .welcome_home .welcome_image img {
+  width: 40rem;
+  height: 45rem;
+}
+
+.analytical_section {
+  margin-top: 3rem;
+}
+.analytical_section .client_detail {
+  background: rgb(81, 81, 221);
+  height: 10rem;
+  border-radius: 1rem;
+}
+.analytical_section .client_detail div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 0.2rem solid white;
+}
+.analytical_section .client_detail div h3 {
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+}
+.analytical_section .client_detail div p {
+  font-size: 1.8rem;
+  color: white;
+}
+
+.start_section {
+  padding-top: 3rem;
+  margin-bottom: 8rem;
+}
+.start_section .start_detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45rem;
+}
+.start_section .start_detail .start_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.start_section .start_detail .start_img img {
+  width: 40rem;
+  height: 45rem;
+}
+.start_section .start_detail .start_content {
+  display: flex;
+  flex-direction: column;
+}
+.start_section .start_detail .start_content p:first-child {
+  font-size: 1.7rem;
+  color: rgb(22, 22, 140);
+}
+.start_section .start_detail .start_content h3 {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+.start_section .start_detail .start_content .para {
+  font-size: 1.7rem;
+  text-align: justify;
+}
+.start_section .start_detail .start_content .button {
+  margin-top: 3rem;
+}
+.start_section .start_detail .start_content .button .btn1 {
+  margin-right: 3rem;
+  font-size: 1.8rem;
+}
+.start_section .start_detail .start_content .button .btn2 {
+  font-size: 1.8rem;
+}
+
+footer {
+  background: rgb(42, 42, 155);
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+footer .footer_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer_content p {
+  font-size: 1.8rem;
+  color: white;
+}
+
+.contact_section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.contact_section .contact_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact_section .contact_img img {
+  width: 40rem;
+  height: 50rem;
+}
+.contact_section .contact_content {
+  padding: 0 5rem;
+}
+.contact_section .contact_content h3 {
+  font-size: 4rem;
+  font-weight: 700;
+  -webkit-text-decoration: underline blue;
+          text-decoration: underline blue;
+}
+.contact_section .contact_content form {
+  padding-top: 4rem;
+}
+.contact_section .contact_content form .input_group label {
+  font-size: 2rem;
+}
+.contact_section .contact_content form .input_group input {
+  font-size: 1.8rem;
+}
+.contact_section .contact_content form .input_group textarea {
+  font-size: 1.8rem;
+}
+.contact_section .contact_content form button {
+  font-size: 1.8rem;
+}
+
+.google_map {
+  margin-bottom: 8rem;
+}
+.google_map iframe {
+  width: 100%;
+  height: 45rem;
+}
+
+.about_section {
+  padding-top: 4rem;
+}
+.about_section .choose_about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about_section .choose_about .choose_content {
+  display: flex;
+  flex-direction: column;
+}
+.about_section .choose_about .choose_content p:first-child {
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  color: rgb(22, 22, 140);
+}
+.about_section .choose_about .choose_content h2 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+.about_section .choose_about .choose_content .para {
+  font-size: 1.9rem;
+  text-align: justify;
+}
+.about_section .choose_about .choose_content .button {
+  margin-top: 3rem;
+}
+.about_section .choose_about .choose_content .button .btn1 {
+  margin-right: 3rem;
+  font-size: 1.8rem;
+}
+.about_section .choose_about .choose_content .button .btn2 {
+  font-size: 1.8rem;
+}
+.about_section .choose_about .choose_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about_section .choose_about .choose_image img {
+  width: 40rem;
+  height: 45rem;
+}
+
+.Error_section .err_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Error_section .err_content .err_404 {
+  font-size: 15rem;
+  font-weight: bold;
+}
+.Error_section .err_content h4 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.Error_section .err_content .para {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.Error_section .err_content .button {
+  padding-top: 2rem;
+}
+.Error_section .err_content .button .btn1 {
+  font-size: 1.8rem;
+  margin-right: 2rem;
+}
+.Error_section .err_content .button .btn2 {
+  font-size: 1.8rem;
+}
+
+.service_section {
+  padding-top: 2rem;
+  padding-bottom: 12rem;
+}
+.service_section h3 {
+  font-size: 5rem;
+  -webkit-text-decoration: underline blue;
+          text-decoration: underline blue;
+  font-weight: 600;
+}
+.service_section .card_row {
+  padding-top: 3rem;
+  gap: 3rem;
+  justify-content: space-between;
+}
+.service_section .card_row .card {
+  width: 30rem;
+}
+.service_section .card_row .card .card-body .card_header {
+  display: flex;
+  justify-content: space-between;
+}
+.service_section .card_row .card .card-body .card_header p {
+  font-size: 1.5rem;
+}
+.service_section .card_row .card .card-body h5 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.service_section .card_row .card .card-body .card-text {
+  font-size: 1.5rem;
+}
+
+.AdminUser_section {
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
+.AdminUser_section .AdminUser_heading {
+  font-size: 3rem;
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
+.AdminUser_section .AdminUser_table table tr {
+  border-bottom: 2px solid;
+}
+.AdminUser_section .AdminUser_table table tr:last-child {
+  border-bottom: none;
+}
+.AdminUser_section .AdminUser_table table tr th {
+  font-size: 2rem;
+  padding: 2rem;
+}
+.AdminUser_section .AdminUser_table table tr td {
+  font-size: 1.7rem;
+  padding: 2rem;
+}
+.AdminUser_section .AdminUser_table table tr .btn_table {
+  padding: 0.5rem 2rem;
+  font-size: 1.7rem;
+}
+
+.updateUser_section {
+  padding-top: 4rem;
+}
+.updateUser_section h4 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.updateUser_section form {
+  padding-top: 4rem;
+  padding-bottom: 10rem;
+}
+.updateUser_section form label {
+  font-size: 2rem;
+}
+.updateUser_section form input {
+  font-size: 1.8rem;
+}
+.updateUser_section form button {
+  font-size: 2rem;
+}
+
+.AdminContact_section {
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
+.AdminContact_section .AdminContact_heading {
+  font-size: 3rem;
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
+.AdminContact_section .AdminContact_table table tr {
+  border-bottom: 2px solid;
+}
+.AdminContact_section .AdminContact_table table tr:last-child {
+  border-bottom: none;
+}
+.AdminContact_section .AdminContact_table table tr th {
+  font-size: 2rem;
+  padding: 2rem;
+}
+.AdminContact_section .AdminContact_table table tr td {
+  font-size: 1.7rem;
+  padding: 2rem;
+  text-align: justify;
+}
+.AdminContact_section .AdminContact_table table tr .btn_table {
+  padding: 0.5rem 2rem;
+  font-size: 1.7rem;
+}/*# sourceMappingURL=index.css.map */

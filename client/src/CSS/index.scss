@@ -1,0 +1,708 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Times New Roman', Times, serif;
+    height: 100%;
+
+}
+
+body {
+    // height: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+// ========================================================================
+// NAVBAR
+// ========================================================================
+header {
+    position: sticky;
+    top: 0%;
+    left: 0%;
+    background: white;
+    z-index: 10000000000;
+}
+
+.nav_bar {
+    background-color: transparent;
+    height: 6.6rem;
+
+    .container>a {
+        font-size: 1.8rem;
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+    }
+
+    .offcanvas-header {
+        h5 {
+            font-size: 1.8rem;
+            text-decoration: none;
+            color: black;
+            font-weight: 700;
+
+        }
+
+        button {
+            font-size: 1.8rem;
+        }
+
+    }
+
+    .navbar-nav {
+        gap: 2rem;
+
+        .nav-item {
+            a {
+                font-size: 1.8rem;
+                text-decoration: none;
+                color: black;
+            }
+
+            .active {
+                display: inline-block;
+                padding-left: 0%;
+                padding-right: 0%;
+                padding-bottom: 1px;
+                border-bottom: 0.2rem solid;
+                color: #0000ff;
+                font-weight: 600;
+            }
+
+        }
+    }
+
+}
+
+.toastBody {
+    font-family: "Atlas Grotesk Web", Arial, Helvetica, sans-serif;
+
+    font-size: 1.7rem !important;
+}
+
+// ========================================================================
+// REGISTER
+// ========================================================================
+
+.register_section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 8rem;
+
+    .reg_image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 40rem;
+            height: 50rem;
+        }
+
+    }
+
+    .reg_content {
+        padding: 0 5rem;
+
+        h3 {
+            font-size: 4rem;
+            font-weight: 700;
+            text-decoration: underline blue;
+        }
+
+        form {
+            padding-top: 4rem;
+
+            .input_group {
+                label {
+                    font-size: 2rem;
+                    // font-weight: 600;
+                }
+
+                input {
+                    font-size: 1.8rem;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                    color: red;
+                    text-transform: capitalize;
+                }
+            }
+
+            button {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+// ========================================================================
+//login
+// ========================================================================
+
+.login_section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 8rem;
+
+    .login_img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 40rem;
+            height: 40rem;
+        }
+
+    }
+
+    .login_content {
+        padding: 0 5rem;
+
+        h3 {
+            font-size: 4rem;
+            font-weight: 700;
+            text-decoration: underline blue;
+        }
+
+        form {
+            padding-top: 4rem;
+
+            .input_group {
+                label {
+                    font-size: 2rem;
+                    // font-weight: 600;
+                }
+
+                input {
+                    font-size: 1.8rem;
+                }
+            }
+
+            button {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+// ========================================================================
+//HomePage
+// ========================================================================
+
+.home_section {
+    padding-top: 4rem;
+
+    .welcome_home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .welcome_content {
+            display: flex;
+            flex-direction: column;
+
+            p:first-child {
+                font-size: 1.7rem;
+                color: rgb(22, 22, 140);
+            }
+
+            h1 {
+                font-size: 4rem;
+                font-weight: 600;
+            }
+
+            .para {
+                font-size: 1.9rem;
+                text-align: justify;
+            }
+
+            .button {
+                margin-top: 3rem;
+
+                .btn1 {
+                    margin-right: 3rem;
+                    font-size: 1.8rem;
+                }
+
+                .btn2 {
+                    font-size: 1.8rem;
+                }
+            }
+
+        }
+
+        .welcome_image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 40rem;
+                height: 45rem;
+            }
+        }
+
+    }
+
+}
+
+.analytical_section {
+    margin-top: 3rem;
+
+    .client_detail {
+        background: rgb(81, 81, 221);
+        height: 10rem;
+        // margin-bottom: 10rem;
+        border-radius: 1rem;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-right: .2rem solid white;
+
+            h3 {
+                font-size: 3rem;
+                color: white;
+                font-weight: bold;
+
+            }
+
+            p {
+                font-size: 1.8rem;
+                color: white;
+            }
+        }
+    }
+}
+
+.start_section {
+    padding-top: 3rem;
+    margin-bottom: 8rem;
+
+
+    .start_detail {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 45rem;
+
+        .start_img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 40rem;
+                height: 45rem;
+            }
+        }
+
+        .start_content {
+            display: flex;
+            flex-direction: column;
+
+            p:first-child {
+                font-size: 1.7rem;
+                color: rgb(22, 22, 140);
+            }
+
+            h3 {
+                font-size: 3.5rem;
+                font-weight: 600;
+            }
+
+            .para {
+                font-size: 1.7rem;
+                text-align: justify;
+            }
+
+            .button {
+                margin-top: 3rem;
+
+                .btn1 {
+                    margin-right: 3rem;
+                    font-size: 1.8rem;
+                }
+
+                .btn2 {
+                    font-size: 1.8rem;
+                }
+            }
+
+        }
+
+    }
+}
+
+// ========================================================================
+//footer
+// ========================================================================
+footer {
+    background: rgb(42, 42, 155);
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    .footer_content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+            font-size: 1.8rem;
+            color: white;
+
+        }
+    }
+}
+
+// ========================================================================
+//contact Page
+// ========================================================================
+
+.contact_section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    .contact_img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 40rem;
+            height: 50rem;
+        }
+
+    }
+
+    .contact_content {
+        padding: 0 5rem;
+
+        h3 {
+            font-size: 4rem;
+            font-weight: 700;
+            text-decoration: underline blue;
+        }
+
+        form {
+            padding-top: 4rem;
+
+            .input_group {
+                label {
+                    font-size: 2rem;
+                    // font-weight: 600;
+                }
+
+                input {
+                    font-size: 1.8rem;
+                }
+
+                textarea {
+                    font-size: 1.8rem;
+
+                }
+            }
+
+            button {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+.google_map {
+    margin-bottom: 8rem;
+
+    iframe {
+        width: 100%;
+        height: 45rem;
+    }
+}
+
+// ========================================================================
+//AboutPage
+// ========================================================================
+
+.about_section {
+    padding-top: 4rem;
+
+    .choose_about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .choose_content {
+            display: flex;
+            flex-direction: column;
+
+            p:first-child {
+                font-size: 1.7rem;
+                text-transform: capitalize;
+                color: rgb(22, 22, 140);
+            }
+
+            h2 {
+                font-size: 4rem;
+                font-weight: 600;
+            }
+
+            .para {
+                font-size: 1.9rem;
+                text-align: justify;
+            }
+
+            .button {
+                margin-top: 3rem;
+
+                .btn1 {
+                    margin-right: 3rem;
+                    font-size: 1.8rem;
+                }
+
+                .btn2 {
+                    font-size: 1.8rem;
+                }
+            }
+
+        }
+
+        .choose_image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 40rem;
+                height: 45rem;
+            }
+        }
+
+    }
+
+}
+
+// ========================================================================
+//ErrorPage
+// ========================================================================
+
+.Error_section {
+
+    .err_content {
+        // width: 20rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .err_404 {
+            font-size: 15rem;
+            font-weight: bold;
+        }
+
+        h4 {
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+
+        .para {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .button {
+            padding-top: 2rem;
+
+            .btn1 {
+                font-size: 1.8rem;
+                margin-right: 2rem;
+            }
+
+            .btn2 {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+// ========================================================================
+//ServicePage
+// ========================================================================
+
+.service_section {
+    padding-top: 2rem;
+    padding-bottom: 12rem;
+
+    h3 {
+        font-size: 5rem;
+        text-decoration: underline blue;
+        font-weight: 600;
+    }
+
+    .card_row {
+        padding-top: 3rem;
+        gap: 3rem;
+        justify-content: space-between;
+
+        .card {
+            width: 30rem;
+
+            .card-body {
+                .card_header {
+                    display: flex;
+                    justify-content: space-between;
+
+                    p {
+                        font-size: 1.5rem;
+                    }
+                }
+
+                h5 {
+                    font-size: 2rem;
+                    font-weight: 600;
+                }
+
+                .card-text {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+// ========================================================================
+//AdminUser
+// ========================================================================
+
+.AdminUser_section {
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+
+    .AdminUser_heading {
+        font-size: 3rem;
+        font-weight: 600;
+        padding-bottom: 2rem;
+    }
+
+    .AdminUser_table {
+        table {
+            tr {
+                border-bottom: 2px solid;
+
+                // box-shadow: 0 0.3rem 0 grey;
+                &:last-child {
+                    border-bottom: none;
+                }
+
+                th {
+                    font-size: 2rem;
+                    padding: 2rem;
+                }
+
+                td {
+                    font-size: 1.7rem;
+                    padding: 2rem;
+
+                }
+
+                .btn_table {
+                    padding: 0.5rem 2rem;
+                    font-size: 1.7rem;
+                }
+
+            }
+        }
+    }
+}
+
+// ========================================================================
+//updateUser_section
+// ========================================================================
+
+.updateUser_section{
+    padding-top: 4rem;
+    h4{
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    form{
+        padding-top: 4rem;
+        padding-bottom: 10rem;
+        label {
+            font-size: 2rem;
+            // font-weight: 600;
+        }
+
+        input {
+            font-size: 1.8rem;
+        }
+        button{
+            font-size: 2rem;
+
+        }
+    }
+}
+
+// ========================================================================
+//AdminContact
+// ========================================================================
+
+.AdminContact_section {
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+
+    .AdminContact_heading {
+        font-size: 3rem;
+        font-weight: 600;
+        padding-bottom: 2rem;
+    }
+
+    .AdminContact_table {
+        table {
+            tr {
+                border-bottom: 2px solid;
+
+                // box-shadow: 0 0.3rem 0 grey;
+                &:last-child {
+                    border-bottom: none;
+                }
+
+                th {
+                    font-size: 2rem;
+                    padding: 2rem;
+                }
+
+                td {
+                    font-size: 1.7rem;
+                    padding: 2rem;
+                    text-align: justify;
+
+                }
+
+                .btn_table {
+                    padding: 0.5rem 2rem;
+                    font-size: 1.7rem;
+                }
+
+            }
+        }
+    }
+}
