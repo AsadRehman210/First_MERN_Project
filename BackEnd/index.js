@@ -9,7 +9,8 @@ const serviceRouter = require('./router/service_router');
 const AdminRouter = require('./router/admin_router');
 
 const corsOption = {
-    origin: "https://first-mern-project-frontend.vercel.app",
+    // origin: "http://localhost:3000",
+    origin:"https://first-mern-project-frontend.vercel.app",
     methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
     credentials: true
 }
@@ -23,7 +24,7 @@ app.use("/api/form", contactRouter);
 app.use("/api/services_Data", serviceRouter)
 
 
-const PORT = 5000;
+const PORT = "https://first-mern-project-api.vercel.app";
 
 connectDB().then(() => {
     app.listen(PORT, () => {
