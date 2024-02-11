@@ -9,7 +9,7 @@ const serviceRouter = require('./router/service_router');
 const AdminRouter = require('./router/admin_router');
 
 const corsOption = {
-    origin: "http://localhost:3000",
+    origin: "",
     methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
     credentials: true
 }
