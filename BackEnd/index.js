@@ -23,7 +23,7 @@ app.use("/api/form", contactRouter);
 app.use("/api/services_Data", serviceRouter)
 
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 
 connectDB().then(() => {
     app.listen(PORT, () => {
