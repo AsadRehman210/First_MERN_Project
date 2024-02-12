@@ -48,11 +48,11 @@ const Login = () => {
         <section className='login_section'>
             <div className='container'>
                 <div className='row'>
-                    <div className='col-lg-6 login_img'>
+                    <div className='col-lg-6 col-12 login_img order-lg-1 order-2'>
                         <img src={login} alt='login_image' />
 
                     </div>
-                    <div className='col-lg-6 login_content'>
+                    <div className='col-lg-6 col-12 order-lg-2 order-1 login_content'>
                         <h3>Login Form</h3>
                         <form onSubmit={handleSubmit}>
                             <div className="mb-3 input_group">

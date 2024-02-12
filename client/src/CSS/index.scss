@@ -14,11 +14,13 @@ html {
 }
 
 body {
-    // height: 100%;
-    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    // min-height: 100%;
     display: flex;
     flex-direction: column;
-    position: relative;
+    min-height: 100vh;
+    // position: relative;
 }
 
 // ========================================================================
@@ -72,7 +74,7 @@ header {
                 display: inline-block;
                 padding-left: 0%;
                 padding-right: 0%;
-                padding-bottom: 1px;
+                padding-bottom: .1rem;
                 border-bottom: 0.2rem solid;
                 color: #0000ff;
                 font-weight: 600;
@@ -94,9 +96,9 @@ header {
 // ========================================================================
 
 .register_section {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    margin-bottom: 8rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    // margin-bottom: 8rem;
 
     .reg_image {
         display: flex;
@@ -151,11 +153,12 @@ header {
 // ========================================================================
 
 .login_section {
+    // border: 2px solid;
     padding-top: 2rem;
-    padding-bottom: 2rem;
-    margin-bottom: 8rem;
+    min-height: calc(100vh - 14.6rem);
 
     .login_img {
+        // border: 2px solid;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -169,6 +172,7 @@ header {
 
     .login_content {
         padding: 0 5rem;
+        // border: 2px solid;
 
         h3 {
             font-size: 4rem;
@@ -208,6 +212,7 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
+        // min-height: 45rem;
 
         .welcome_content {
             display: flex;
@@ -255,15 +260,15 @@ header {
         }
 
     }
+    
 
 }
-
 .analytical_section {
-    margin-top: 3rem;
+    margin-top: 4rem;
 
     .client_detail {
         background: rgb(81, 81, 221);
-        height: 10rem;
+        min-height: 10rem;
         // margin-bottom: 10rem;
         border-radius: 1rem;
 
@@ -290,15 +295,14 @@ header {
 }
 
 .start_section {
-    padding-top: 3rem;
-    margin-bottom: 8rem;
-
+    padding-top: 4rem;
+    // min-height: 45rem;
 
     .start_detail {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 45rem;
+        // height: 45rem;
 
         .start_img {
             display: flex;
@@ -348,17 +352,21 @@ header {
     }
 }
 
+
+
 // ========================================================================
 //footer
 // ========================================================================
+
 footer {
     background: rgb(42, 42, 155);
     height: 8rem;
     display: flex;
     align-items: center;
-    position: absolute;
     bottom: 0;
     width: 100%;
+    margin-bottom: 0;
+    margin-top: auto;
 
     .footer_content {
         display: flex;
@@ -430,11 +438,12 @@ footer {
 }
 
 .google_map {
-    margin-bottom: 8rem;
+    margin-bottom: 2rem;
 
     iframe {
         width: 100%;
         height: 45rem;
+        max-width: 100%;
     }
 }
 
@@ -444,6 +453,8 @@ footer {
 
 .about_section {
     padding-top: 4rem;
+    padding-bottom: 2rem;
+    margin-bottom: 8rem;
 
     .choose_about {
         display: flex;
@@ -549,7 +560,7 @@ footer {
 
 .service_section {
     padding-top: 2rem;
-    padding-bottom: 12rem;
+    padding-bottom: 4rem;
 
     h3 {
         font-size: 5rem;
@@ -564,6 +575,8 @@ footer {
 
         .card {
             width: 30rem;
+            min-height: 34rem;
+            margin: auto;
 
             .card-body {
                 .card_header {
@@ -593,8 +606,6 @@ footer {
 // ========================================================================
 
 .AdminUser_section {
-    padding-top: 5rem;
-    padding-bottom: 10rem;
 
     .AdminUser_heading {
         font-size: 3rem;
@@ -605,7 +616,7 @@ footer {
     .AdminUser_table {
         table {
             tr {
-                border-bottom: 2px solid;
+                border-bottom: .2rem solid;
 
                 // box-shadow: 0 0.3rem 0 grey;
                 &:last-child {
@@ -637,15 +648,23 @@ footer {
 //updateUser_section
 // ========================================================================
 
-.updateUser_section{
+.updateUser_section {
     padding-top: 4rem;
-    h4{
+
+    a {
+        font-size: 1.8rem;
+    }
+
+    h4 {
+        padding-top: 2rem;
         font-size: 3rem;
         font-weight: 700;
     }
-    form{
+
+    form {
         padding-top: 4rem;
         padding-bottom: 10rem;
+
         label {
             font-size: 2rem;
             // font-weight: 600;
@@ -654,7 +673,8 @@ footer {
         input {
             font-size: 1.8rem;
         }
-        button{
+
+        button {
             font-size: 2rem;
 
         }
@@ -666,8 +686,6 @@ footer {
 // ========================================================================
 
 .AdminContact_section {
-    padding-top: 5rem;
-    padding-bottom: 10rem;
 
     .AdminContact_heading {
         font-size: 3rem;
@@ -678,7 +696,7 @@ footer {
     .AdminContact_table {
         table {
             tr {
-                border-bottom: 2px solid;
+                border-bottom: .2rem solid;
 
                 // box-shadow: 0 0.3rem 0 grey;
                 &:last-child {
@@ -705,4 +723,233 @@ footer {
             }
         }
     }
+}
+
+// ========================================================================
+//AdminNavBar
+// ========================================================================
+
+.admin_nav_section {
+    padding: 0 1rem 3rem 1rem;
+
+    .db_heading {
+        font-size: 3rem;
+        color: #080843;
+        border-bottom: .2rem solid #080843;
+    }
+
+    ul {
+        padding-top: 3rem;
+
+        li {
+            a {
+                font-size: 2rem;
+                font-weight: 600;
+                display: flex;
+                // justify-content: center;
+                align-items: center;
+            }
+
+        }
+    }
+}
+
+// ========================================================================
+//AdminLayout
+// ========================================================================
+.AdminLayout_section {
+    padding-top: 4rem;
+    padding-bottom: 10rem;
+
+    .admin_nav_section {
+        background: aqua;
+        height: 100%;
+    }
+}
+
+// ========================================================================
+//adminServices_section
+// ========================================================================
+.adminServices_section {
+    .service_header {
+        padding-bottom: 4rem;
+        display: flex;
+        align-items: center;
+
+        .AdminService_heading {
+            // padding-top: 2rem;
+            font-size: 3rem;
+            font-weight: 600;
+            margin-right: 3rem;
+
+        }
+
+        a {
+            font-size: 2rem;
+            padding: 0.5rem 2rem;
+            width: auto;
+        }
+
+    }
+
+
+    .AdminService_table {
+        table {
+            tr {
+                border-bottom: .2rem solid;
+
+                &:last-child {
+                    border-bottom: none;
+                }
+
+                th {
+                    font-size: 2rem;
+                    padding: 2rem;
+                }
+
+                td {
+                    font-size: 1.7rem;
+                    padding: 2rem;
+
+                }
+
+                .btn_table {
+                    padding: 0.5rem 2rem;
+                    font-size: 1.7rem;
+                }
+
+            }
+        }
+    }
+
+}
+
+// ========================================================================
+//UpdateService_section
+// ========================================================================
+.UpdateService_section {
+    padding-top: 4rem;
+
+    a {
+        font-size: 1.8rem;
+    }
+
+    h4 {
+        padding-top: 2rem;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    form {
+        padding-top: 4rem;
+        padding-bottom: 10rem;
+
+        label {
+            font-size: 2rem;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+
+        input {
+            font-size: 1.8rem;
+        }
+
+        button {
+            font-size: 2rem;
+
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    html {
+        font-size: 55%;
+    }
+    .admin_nav_section {
+        .db_heading {
+            font-size: 2rem;
+        }   
+        ul {   
+            li {
+                a {
+                    font-size: 1.5rem;
+                }
+    
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 817px) {
+    html {
+        font-size: 50%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 45%;
+    }
+}
+
+@media screen and (max-width: 668px) {
+    html {
+        font-size: 40%;
+    }
+
+}
+
+@media screen and (max-width: 587px) {
+    html {
+        font-size: 35%;
+    }
+    .container{
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+}
+@media screen and (max-width: 537px) {
+    html {
+        font-size: 25%;
+    }
+    .container{
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+
+}
+@media screen and (max-width: 396px) {
+    html {
+        font-size: 18%;
+    }
+    .container{
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+    .admin_nav_section {
+        .db_heading {
+            font-size: 2rem;
+        }   
+        ul {   
+            li {
+                a {
+                    font-size: 1.5rem;
+                }
+    
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 288px){
+    html {
+        font-size: 12%;
+    }
+    .container{
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+
 }

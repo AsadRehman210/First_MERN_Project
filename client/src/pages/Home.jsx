@@ -10,7 +10,7 @@ const Home = () => {
             <section className='home_section'>
                 <div className='container'>
                     <div className='row welcome_home'>
-                        <div className='col-lg-6 welcome_content'>
+                        <div className='col-lg-6 col-md-12 col-sm-12 welcome_content'>
                             <p>We are the World best IT Company</p>
                             <h1>Welcome to Asad Rehman</h1>
                             <p className='para'>Are you ready to take your business to the next level with cutting-edge IT solutions?Look no further!Mr. Asad Rehman, i am specializ in providing innovative IT services and solutions tailored to meet your unique needs</p>
@@ -20,7 +20,7 @@ const Home = () => {
                             </div>
 
                         </div>
-                        <div className='col-lg-6 welcome_image'>
+                        <div className='col-lg-6 col-md-12 col-sm-12 welcome_image'>
                             <img src={welcome} alt='Welcome_image' />
                         </div>
 
@@ -32,11 +32,11 @@ const Home = () => {
             <section className='start_section'>
                 <div className='container'>
                     <div className='row start_detail'>
-                        <div className='col-lg-6 start_img'>
+                        <div className='col-lg-6 col-md-12 col-sm-12 order-lg-1 order-2 start_img'>
                         <img src={helpImage} alt='help_img' />
 
                         </div>
-                        <div className='col-lg-6 start_content'>
+                        <div className='col-lg-6 col-md-12 col-sm-12 order-lg-2 order-1 start_content'>
                             <p>We are here to help you</p>
                             <h3>Get Started today</h3>
                             <p className='para'>Ready to take the first step towards a more efficient and secure IT infrastructure? contact us for a free consultation and let's discuss How Mr. Asad Rehman can help your business thrive in digital age</p>

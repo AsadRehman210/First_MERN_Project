@@ -9,8 +9,8 @@ export const AuthProvider = ({ children }) => {
     const [isLoading, setIsLoading] = useState(true)
     const authorizationToken = `Bearer ${token}`
 
-    const API = process.env.REACT_APP_URL_API
-    // const API = "http://localhost:5000"
+    // const API = process.env.REACT_APP_URL_API
+    const API = "http://localhost:5000"
 
     // token store
     const storeTokenInLS = (tokenValue) => {

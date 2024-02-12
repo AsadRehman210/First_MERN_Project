@@ -20,10 +20,10 @@ const Service = () => {
             <section className='service_section'>
                 <div className='container'>
                     <h3>Services</h3>
-                    <div className='row card_row'>
+                    <div className='row card_row '>
                         {serviceInfo.map((ele, index) => {
                             return (
-                                <div className="card col-lg-4" key={ele._id}>
+                                <div className="card col-lg-4 col-md-6 col-sm-6 col-xs-12" key={ele._id}>
                                     <img src={cardImage} className="card-img-top" alt="card_image" />
                                     <div className="card-body">
                                         <div className='card_header'>

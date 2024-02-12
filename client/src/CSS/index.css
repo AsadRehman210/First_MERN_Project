@@ -12,10 +12,11 @@ html {
 }
 
 body {
-  min-height: 100%;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  position: relative;
+  min-height: 100vh;
 }
 
 header {
@@ -57,7 +58,7 @@ header {
   display: inline-block;
   padding-left: 0%;
   padding-right: 0%;
-  padding-bottom: 1px;
+  padding-bottom: 0.1rem;
   border-bottom: 0.2rem solid;
   color: #0000ff;
   font-weight: 600;
@@ -69,9 +70,8 @@ header {
 }
 
 .register_section {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  margin-bottom: 8rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 .register_section .reg_image {
   display: flex;
@@ -111,8 +111,7 @@ header {
 
 .login_section {
   padding-top: 2rem;
-  padding-bottom: 2rem;
-  margin-bottom: 8rem;
+  min-height: calc(100vh - 14.6rem);
 }
 .login_section .login_img {
   display: flex;
@@ -190,11 +189,11 @@ header {
 }
 
 .analytical_section {
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 .analytical_section .client_detail {
   background: rgb(81, 81, 221);
-  height: 10rem;
+  min-height: 10rem;
   border-radius: 1rem;
 }
 .analytical_section .client_detail div {
@@ -215,14 +214,12 @@ header {
 }
 
 .start_section {
-  padding-top: 3rem;
-  margin-bottom: 8rem;
+  padding-top: 4rem;
 }
 .start_section .start_detail {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 45rem;
 }
 .start_section .start_detail .start_img {
   display: flex;
@@ -265,9 +262,10 @@ footer {
   height: 8rem;
   display: flex;
   align-items: center;
-  position: absolute;
   bottom: 0;
   width: 100%;
+  margin-bottom: 0;
+  margin-top: auto;
 }
 footer .footer_content {
   display: flex;
@@ -319,15 +317,18 @@ footer .footer_content p {
 }
 
 .google_map {
-  margin-bottom: 8rem;
+  margin-bottom: 2rem;
 }
 .google_map iframe {
   width: 100%;
   height: 45rem;
+  max-width: 100%;
 }
 
 .about_section {
   padding-top: 4rem;
+  padding-bottom: 2rem;
+  margin-bottom: 8rem;
 }
 .about_section .choose_about {
   display: flex;
@@ -402,7 +403,7 @@ footer .footer_content p {
 
 .service_section {
   padding-top: 2rem;
-  padding-bottom: 12rem;
+  padding-bottom: 4rem;
 }
 .service_section h3 {
   font-size: 5rem;
@@ -417,6 +418,8 @@ footer .footer_content p {
 }
 .service_section .card_row .card {
   width: 30rem;
+  min-height: 34rem;
+  margin: auto;
 }
 .service_section .card_row .card .card-body .card_header {
   display: flex;
@@ -433,17 +436,13 @@ footer .footer_content p {
   font-size: 1.5rem;
 }
 
-.AdminUser_section {
-  padding-top: 5rem;
-  padding-bottom: 10rem;
-}
 .AdminUser_section .AdminUser_heading {
   font-size: 3rem;
   font-weight: 600;
   padding-bottom: 2rem;
 }
 .AdminUser_section .AdminUser_table table tr {
-  border-bottom: 2px solid;
+  border-bottom: 0.2rem solid;
 }
 .AdminUser_section .AdminUser_table table tr:last-child {
   border-bottom: none;
@@ -464,7 +463,11 @@ footer .footer_content p {
 .updateUser_section {
   padding-top: 4rem;
 }
+.updateUser_section a {
+  font-size: 1.8rem;
+}
 .updateUser_section h4 {
+  padding-top: 2rem;
   font-size: 3rem;
   font-weight: 700;
 }
@@ -482,17 +485,13 @@ footer .footer_content p {
   font-size: 2rem;
 }
 
-.AdminContact_section {
-  padding-top: 5rem;
-  padding-bottom: 10rem;
-}
 .AdminContact_section .AdminContact_heading {
   font-size: 3rem;
   font-weight: 600;
   padding-bottom: 2rem;
 }
 .AdminContact_section .AdminContact_table table tr {
-  border-bottom: 2px solid;
+  border-bottom: 0.2rem solid;
 }
 .AdminContact_section .AdminContact_table table tr:last-child {
   border-bottom: none;
@@ -509,4 +508,161 @@ footer .footer_content p {
 .AdminContact_section .AdminContact_table table tr .btn_table {
   padding: 0.5rem 2rem;
   font-size: 1.7rem;
+}
+
+.admin_nav_section {
+  padding: 0 1rem 3rem 1rem;
+}
+.admin_nav_section .db_heading {
+  font-size: 3rem;
+  color: #080843;
+  border-bottom: 0.2rem solid #080843;
+}
+.admin_nav_section ul {
+  padding-top: 3rem;
+}
+.admin_nav_section ul li a {
+  font-size: 2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.AdminLayout_section {
+  padding-top: 4rem;
+  padding-bottom: 10rem;
+}
+.AdminLayout_section .admin_nav_section {
+  background: aqua;
+  height: 100%;
+}
+
+.adminServices_section .service_header {
+  padding-bottom: 4rem;
+  display: flex;
+  align-items: center;
+}
+.adminServices_section .service_header .AdminService_heading {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-right: 3rem;
+}
+.adminServices_section .service_header a {
+  font-size: 2rem;
+  padding: 0.5rem 2rem;
+  width: auto;
+}
+.adminServices_section .AdminService_table table tr {
+  border-bottom: 0.2rem solid;
+}
+.adminServices_section .AdminService_table table tr:last-child {
+  border-bottom: none;
+}
+.adminServices_section .AdminService_table table tr th {
+  font-size: 2rem;
+  padding: 2rem;
+}
+.adminServices_section .AdminService_table table tr td {
+  font-size: 1.7rem;
+  padding: 2rem;
+}
+.adminServices_section .AdminService_table table tr .btn_table {
+  padding: 0.5rem 2rem;
+  font-size: 1.7rem;
+}
+
+.UpdateService_section {
+  padding-top: 4rem;
+}
+.UpdateService_section a {
+  font-size: 1.8rem;
+}
+.UpdateService_section h4 {
+  padding-top: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.UpdateService_section form {
+  padding-top: 4rem;
+  padding-bottom: 10rem;
+}
+.UpdateService_section form label {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.UpdateService_section form input {
+  font-size: 1.8rem;
+}
+.UpdateService_section form button {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 55%;
+  }
+  .admin_nav_section .db_heading {
+    font-size: 2rem;
+  }
+  .admin_nav_section ul li a {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 817px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 45%;
+  }
+}
+@media screen and (max-width: 668px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media screen and (max-width: 587px) {
+  html {
+    font-size: 35%;
+  }
+  .container {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+}
+@media screen and (max-width: 537px) {
+  html {
+    font-size: 25%;
+  }
+  .container {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+}
+@media screen and (max-width: 396px) {
+  html {
+    font-size: 18%;
+  }
+  .container {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+  .admin_nav_section .db_heading {
+    font-size: 2rem;
+  }
+  .admin_nav_section ul li a {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 288px) {
+  html {
+    font-size: 12%;
+  }
+  .container {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
 }/*# sourceMappingURL=index.css.map */

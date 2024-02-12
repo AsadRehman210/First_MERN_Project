@@ -27,15 +27,24 @@ const AdminUser = () => {
   // Delete User
   const deleteUser = async (id) => {
     try {
-      await axios.delete(`${API}/api/admin/user/delete/${id}`, {
+     const res = await axios.delete(`${API}/api/admin/user/delete/${id}`, {
         headers: {
           Authorization: authorizationToken
         }
       })
-      getAdminUser();
+      const Data = res.data
+      
+      if (Data.message === "You are Admin"){
+        toast.error("You are Admin. Don't Delete Your Self")
+
+      }else{
+        getAdminUser();
       toast.success("Delete Successfully")
+      }
+      
 
     } catch (error) {
+      toast.error("Didn't Delete it. Please try again")
       console.log(error)
 
     }

@@ -40,7 +40,7 @@ const Registration = () => {
                 console.log(res_data)
 
                 action.resetForm();
-                window.alert("Submitted Successfully")
+                toast.success("Submitted Successfully")
                 navigate("/login");
 
             } catch (error) {
@@ -55,10 +55,10 @@ const Registration = () => {
             <div className='register_section'>
                 <div className='container'>
                     <div className='row'>
-                        <div className='col-lg-6 reg_image'>
+                        <div className='col-lg-6 col-12 order-lg-1 order-2 reg_image'>
                             <img src={register} alt='registration' />
                         </div>
-                        <div className='col-lg-6 reg_content'>
+                        <div className='col-lg-6 col-12 order-lg-2 order-1 reg_content'>
                             <h3>Registration Form</h3>
                             <form onSubmit={handleSubmit}>
                                 <div className="mb-3 input_group">

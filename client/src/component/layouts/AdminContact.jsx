@@ -33,6 +33,7 @@ const AdminContact = () => {
       getContactDetail();
       toast.success("Delete Successfully")   
     } catch (error) {
+      toast.error("Didn't Delete.Please try again")
       console.log(error)     
     }
   }

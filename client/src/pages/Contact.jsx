@@ -4,6 +4,7 @@ import contactImg from "../Images/contact.webp"
 import axios from 'axios';
 import { useAuth } from '../store/auth_store';
 import GoogleMap from '../component/GoogleMap';
+import { toast } from 'react-toastify';
 
 const Contact = () => {
     const { user,API } = useAuth();
@@ -31,9 +32,10 @@ const Contact = () => {
                 })
 
                 action.resetForm();
-                window.alert("Submitted Successfully")
+                toast.success("Submitted Successfully")
 
             } catch (error) {
+                toast.error("Didn't Submitted Please try again later")
 
             }
 
@@ -44,11 +46,11 @@ const Contact = () => {
             <section className='contact_section'>
                 <div className='container'>
                     <div className='row'>
-                        <div className='col-lg-6 contact_img'>
+                        <div className='col-lg-6 col-12 order-lg-1 order-2 contact_img'>
                             <img src={contactImg} alt='contact_image' />
 
                         </div>
-                        <div className='col-lg-6 contact_content'>
+                        <div className='col-lg-6 col-12 order-lg-2 order-1 contact_content'>
                             <h3>Contact Form</h3>
                             <form onSubmit={handleSubmit}>
                                 <div className="mb-3 input_group">

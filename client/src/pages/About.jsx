@@ -50,11 +50,11 @@ const About = () => {
             <section className='start_section'>
                 <div className='container'>
                     <div className='row start_detail'>
-                        <div className='col-lg-6 start_img'>
+                        <div className='col-lg-6 start_img order-lg-1 order-2'>
                         <img src={helpImg} alt='help_img' />
 
                         </div>
-                        <div className='col-lg-6 start_content'>
+                        <div className='col-lg-6 order-lg-2 order-1 start_content'>
                             <p>We are here to help you</p>
                             <h3>Get the Support You Need</h3>
                             <p className='para'>For any queries or assistance, navigate to our Contact Page. Our comprehensive help resources provide answers to common questions, while our dedicated support team is ready to address personalized inquiries. We prioritize user satisfaction and aim to provide swift and effective assistance. Your feedback matters – reach out to us for a seamless and responsive support experience.</p>

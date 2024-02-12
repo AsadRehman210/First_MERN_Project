@@ -16,6 +16,8 @@ import AdminUser from "./component/layouts/AdminUser";
 import AdminContact from "./component/layouts/AdminContact";
 import AdminServices from "./component/layouts/AdminServices";
 import UpdateUser from "./pages/UpdateUser";
+import UpdateService from "./pages/UpdateService";
+import CreateService from "./pages/CreateService";
 
 function App() {
   return (
@@ -35,6 +37,8 @@ function App() {
           <Route path="contact" element={<AdminContact />} />
           <Route path="services" element={<AdminServices />} />
           <Route path="userUpdate/:id" element={<UpdateUser/>} />
+          <Route path="updateService/:id" element={<UpdateService />} />
+          <Route path="createService" element={<CreateService />}/>
 
         </Route>
       </Routes>

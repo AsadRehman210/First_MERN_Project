@@ -14,7 +14,7 @@ const Navbar = () => {
                         <button className="navbar-toggler shadow-none " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
-                        <div className="offcanvas offcanvas-start w-100 " tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div className="offcanvas offcanvas-start w-50 " tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                             <div className="offcanvas-header border-bottom border-black border-3">
                                 <h5 className="offcanvas-title" id="offcanvasNavbarLabel">MERN DEVELOPER</h5>
                                 <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -42,6 +42,10 @@ const Navbar = () => {
                                     <li className="nav-item">
                                         <NavLink className="nav-link " to="/register">Register</NavLink>
                                     </li></>}
+
+                                    <li className="nav-item">
+                                        <NavLink className="nav-link " to="/admin/user">Admin</NavLink>
+                                    </li>
                                     
                                     
                                 </ul>

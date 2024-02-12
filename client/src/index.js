@@ -27,6 +27,7 @@ root.render(
           transition={Bounce}
           style={{ zIndex: 90000000000 }}
           bodyClassName="toastBody"
+          limit= {1}
         />
       </BrowserRouter>
     </React.StrictMode>
