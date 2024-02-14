@@ -1,6 +1,5 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import cardImage from "../Images/card.webp"
 import { useAuth } from '../store/auth_store'
 const Service = () => {
     const API = useAuth().API;
@@ -24,7 +23,7 @@ const Service = () => {
                         {serviceInfo.map((ele, index) => {
                             return (
                                 <div className="card col-lg-4 col-md-6 col-sm-6 col-xs-12" key={ele._id}>
-                                    <img src={cardImage} className="card-img-top" alt="card_image" />
+                                    <img src={`http://localhost:5000/${ele.picture}`} className="card-img-top" alt="card_image" width="100%" />
                                     <div className="card-body">
                                         <div className='card_header'>
                                             <p>{ele.provider}</p>

@@ -25,9 +25,10 @@ root.render(
           pauseOnHover
           theme="colored"
           transition={Bounce}
-          style={{ zIndex: 90000000000 }}
+          style={{zIndex: 90000000000 }}
           bodyClassName="toastBody"
-          limit= {1}
+          limit={1}
+          toaster-options="{'time-out': 3000, 'close-button':true, 'position-class':'my-toast-class'}"
         />
       </BrowserRouter>
     </React.StrictMode>

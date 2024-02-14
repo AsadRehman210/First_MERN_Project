@@ -87,9 +87,10 @@ header {
 
 .toastBody {
     font-family: "Atlas Grotesk Web", Arial, Helvetica, sans-serif;
-
-    font-size: 1.7rem !important;
+    font-size: 2rem !important;
 }
+
+
 
 // ========================================================================
 // REGISTER
@@ -577,6 +578,9 @@ footer {
             width: 30rem;
             min-height: 34rem;
             margin: auto;
+            img{
+                height: 15rem;
+            }
 
             .card-body {
                 .card_header {
@@ -908,6 +912,7 @@ footer {
         padding-left: 8rem;
         padding-right: 8rem;
     }
+    
 }
 @media screen and (max-width: 537px) {
     html {

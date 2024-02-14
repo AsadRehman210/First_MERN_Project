@@ -16,6 +16,10 @@ const Service_schema = new mongoose.Schema({
     provider: {
         type:String,
         require: true
+    },
+    picture: {
+        type:String,
+        require: true
     }
 
 })

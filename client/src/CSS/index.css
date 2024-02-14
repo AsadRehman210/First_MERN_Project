@@ -66,7 +66,7 @@ header {
 
 .toastBody {
   font-family: "Atlas Grotesk Web", Arial, Helvetica, sans-serif;
-  font-size: 1.7rem !important;
+  font-size: 2rem !important;
 }
 
 .register_section {
@@ -420,6 +420,9 @@ footer .footer_content p {
   width: 30rem;
   min-height: 34rem;
   margin: auto;
+}
+.service_section .card_row .card img {
+  height: 15rem;
 }
 .service_section .card_row .card .card-body .card_header {
   display: flex;

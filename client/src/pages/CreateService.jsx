@@ -1,18 +1,21 @@
 import axios from 'axios'
 import { useFormik } from 'formik'
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink, useNavigate } from 'react-router-dom'
 import { useAuth } from '../store/auth_store';
 import { toast } from 'react-toastify';
 
 const CreateService = () => {
     const { API, authorizationToken } = useAuth();
-    const navigate = useNavigate()
+    const navigate = useNavigate();
+    const [picture, setPicture] = useState({})
+
     const initialValues = {
         service: "",
         description: "",
         price: "",
-        provider: ""
+        provider: "",
+        picture: ""
     }
     const { values, handleChange, handleSubmit } = useFormik({
         initialValues: initialValues,
@@ -22,11 +25,13 @@ const CreateService = () => {
                     service: values.service,
                     description: values.description,
                     price: values.price,
-                    provider: values.provider
+                    provider: values.provider,
+                    picture: picture
 
-                },{
-                    headers:{
-                        Authorization: authorizationToken
+                }, {
+                    headers: {
+                        Authorization: authorizationToken,
+                        'Content-Type': 'multipart/form-data'
                     }
                 })
                 navigate("/admin/services");
@@ -34,6 +39,7 @@ const CreateService = () => {
 
             } catch (error) {
                 toast.error("Service Record did not Created")
+                console.log(`Error ${error}`)
 
             }
         }
@@ -83,6 +89,19 @@ const CreateService = () => {
                                     name='provider'
                                     value={values.provider}
                                     onChange={handleChange}
+                                    className="form-control"
+                                    placeholder="Enter the Provider" required />
+                            </div>
+
+                            <div className="mb-3 input_group">
+                                <label className="form-label">Upload Image</label>
+                                <input type="file"
+                                    name='picture'
+                                    accept='image/*'
+                                    onChange={(e) =>
+                                        setPicture(e.target.files[0])
+                                    }
+
                                     className="form-control"
                                     placeholder="Enter the Provider" required />
                             </div>

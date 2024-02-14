@@ -138,11 +138,17 @@ const getForServiceUpdation = async (req, res)=>{
 
 // updation completed and updat in database
 const updationcompleted = async (req, res)=>{
+    console.log(req.body)
+    console.log(req.file)
     try {
         const id = req.params.id;
-        const Data = req.body;
+        const {service, description, price, provider} = req.body;
+        const picture = req.file.path;
+        const Data = {service, description, price, provider, picture}
+        console.log(picture)
+        
         const DataUpdated= await Service.updateOne({_id:id}, {$set: Data});
-        return res.status(200).json({DataUpdated})
+        return res.status(200).json({DataUpdated, picture})
         
     } catch (error) {
         return res.status(400).json({message: error})
@@ -153,13 +159,18 @@ const updationcompleted = async (req, res)=>{
 
 // service Creation
 const ServiceCreation = async (req, res)=>{
+
     try {
         const {service, description, price, provider} = req.body;
-        const serviceData = await Service.create({service, description, price, provider});
+        const picture = req.file.path;
+        console.log(picture)
+        
+        const serviceData = await Service.create({service, description, price, provider, picture:picture});
         return res.status(201).json({serviceData})
         
     } catch (error) {
         res.status(400).json({error})
+        console.log(error)
         
     }
 }

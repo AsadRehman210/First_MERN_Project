@@ -10,6 +10,7 @@ const UpdateService = () => {
     const { API, authorizationToken } = useAuth();
     const { id } = useParams();
     const [initInput, setInitInput] = useState({})
+    const [picture, setPicture] = useState({})
     const navigate = useNavigate()
 
     const getInitInput = async () => {
@@ -17,6 +18,7 @@ const UpdateService = () => {
             const res = await axios.get(`${API}/api/admin/service/update/${id}`, {
                 headers: {
                     Authorization: authorizationToken
+                    
                 }
             })
             const Data = res.data.serviceData;
@@ -35,7 +37,8 @@ const UpdateService = () => {
         service: initInput.service || "",
         description: initInput.description || "",
         price: initInput.price || "",
-        provider: initInput.provider || ""
+        provider: initInput.provider || "",
+        // picture: initInput.picture || {}
     }
 
     const { values, handleChange, handleSubmit } = useFormik({
@@ -48,10 +51,13 @@ const UpdateService = () => {
                     service: values.service,
                     description: values.description,
                     price: values.price,
-                    provider: values.provider
+                    provider: values.provider,
+                    picture: picture
+
                 }, {
                     headers: {
-                        Authorization: authorizationToken
+                        Authorization: authorizationToken,
+                        'Content-Type': 'multipart/form-data'
                     }
                 })
                 action.resetForm();
@@ -69,7 +75,7 @@ const UpdateService = () => {
         <section className='UpdateService_section'>
             <div className='container'>
                 <NavLink to="/admin/services" className='btn btn-primary'>Go to Admin Service</NavLink>
-                <h4>Update User Data</h4>
+                <h4>Create Service Data</h4>
                 <div className='row'>
                     <div className='col-lg-6'>
                         <form onSubmit={handleSubmit}>
@@ -104,11 +110,24 @@ const UpdateService = () => {
                             </div>
 
                             <div className="mb-3 input_group">
-                                <label className="form-label">Provider</label>
+                                <label className="form-label">Good Provider</label>
                                 <input type="text"
                                     name='provider'
                                     value={values.provider}
                                     onChange={handleChange}
+                                    className="form-control"
+                                    placeholder="Enter the Provider" required />
+                            </div>
+
+                            <div className="mb-3 input_group">
+                                <label className="form-label">Upload Image</label>
+                                <input type="file"
+                                    name='picture'
+                                    accept='image/*'
+                                    onChange={(e) =>
+                                        setPicture(e.target.files[0])
+                                    }
+
                                     className="form-control"
                                     placeholder="Enter the Provider" required />
                             </div>
